@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+section {
+    display: flex;
+    height: 60vh;
+    align-items: flex-end;
+}
+
+.transition {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.ball1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.ball2 {
+    margin-left: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blueviolet;
+
+    transition-delay: 1s;
+}
+
+
+section:active .ball1 {
+    transform: translateX(200px);
+}
+section:active .ball2 {
+    transform: translateX(800px);
+}
